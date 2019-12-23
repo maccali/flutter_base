@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_base/widgets/buttons/flat_button_custom.dart';
+import 'package:flutter_base/widgets/input_fields/text_form_field_custom.dart';
 
 class Login extends StatefulWidget {
   Login() {}
@@ -32,7 +33,7 @@ class _LoginState extends State<Login> {
               padding:
                   EdgeInsets.only(top: 50, left: 20, right: 20, bottom: 50),
               width: 200,
-              height: 300,
+              height: 260,
               child: Image.asset(
                 'assets/logo.png',
               ),
@@ -55,26 +56,23 @@ class _LoginState extends State<Login> {
               padding: EdgeInsets.only(top: 0, left: 40, right: 40),
               child: Column(
                 children: <Widget>[
-                  TextFormField(
-                    // autofocus: true,
+                  TextFormFieldCustom(
+                    text: "Email",
                     keyboardType: TextInputType.emailAddress,
-                    decoration: InputDecoration(
-                      labelText: 'Email',
-                    ),
                   ),
                   SizedBox(
                     height: 30,
                   ),
-                  TextFormField(
-                    // autofocus: true,
-                    keyboardType: TextInputType.text,
+                   TextFormFieldCustom(
+                    text: "Senha",
                     obscureText: true,
-                    decoration: InputDecoration(
-                      labelText: 'Senha',
-                    ),
+                    keyboardType: TextInputType.text,
+                  ),
+                  SizedBox(
+                    height: 30,
                   ),
                   FlatButtonCustom(
-                    text: "fdsfsd",
+                    text: "Entrar",
                     onPressed: () {
                       print('oi?');
                     },
