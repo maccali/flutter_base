@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_base/widgets/buttons/flat_button_custom.dart';
 import 'package:flutter_base/widgets/buttons/icon_button_custom.dart';
-import 'package:flutter_base/widgets/input_fields/text_form_field_custom.dart';
+import 'package:flutter_base/widgets/input_fields/icon_text_form_field_custom.dart';
 import 'package:flutter_base/widgets/texts/text_custom_link.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -48,21 +47,22 @@ class _LoginState extends State<Login> {
                   height: 100,
                 ),
               ),
-
               SizedBox(
                 height: 40,
               ),
-              TextFormFieldCustom(
+              IconTextFormFieldCustom(
                 text: "Email",
                 keyboardType: TextInputType.emailAddress,
+                icon: Icon(Icons.alternate_email),
               ),
               SizedBox(
                 height: 20,
               ),
-              TextFormFieldCustom(
+              IconTextFormFieldCustom(
                 text: "Senha",
                 obscureText: true,
                 keyboardType: TextInputType.text,
+                icon: Icon(Icons.vpn_key),
               ),
               SizedBox(
                 height: 20,
@@ -72,14 +72,17 @@ class _LoginState extends State<Login> {
                 children: <Widget>[
                   IconButtonCustom(
                     icon: Icon(FontAwesomeIcons.facebookF),
+                    color: Color(0xff3b5998),
                     onPressed: () {},
                   ),
                   IconButtonCustom(
                     icon: Icon(FontAwesomeIcons.google),
+                    color: Color(0xffd50f25),
                     onPressed: () {},
                   ),
                   IconButtonCustom(
                     icon: Icon(FontAwesomeIcons.check),
+                    color: Color(0xff009925),
                     onPressed: () {},
                   ),
                 ],
@@ -100,156 +103,9 @@ class _LoginState extends State<Login> {
                 textLink: "Cadastre-se",
                 onPressed: () {},
               ),
-
-              // ListView(
-              //   padding: EdgeInsets.only(
-              //     left: 40,
-              //     right: 40,
-              //   ),
-              //   children: <Widget>[
-              //     SizedBox(
-              //       height: 40,
-              //     ),
-              //     TextFormFieldCustom(
-              //       text: "Email",
-              //       keyboardType: TextInputType.emailAddress,
-              //     ),
-              //     SizedBox(
-              //       height: 20,
-              //     ),
-              //     TextFormFieldCustom(
-              //       text: "Senha",
-              //       obscureText: true,
-              //       keyboardType: TextInputType.text,
-              //     ),
-              //     SizedBox(
-              //       height: 20,
-              //     ),
-              //     FlatButtonCustom(
-              //       text: "Entrar",
-              //       onPressed: () {
-              //         print('oi?');
-              //       },
-              //     ),
-              //     TextCustomLink(
-              //       text: "Esqueceu sua senha?",
-              //       textLink: "Renove",
-              //       onPressed: () {},
-              //     ),
-              //     SizedBox(
-              //       height: 10,
-              //     ),
-              //     TextCustomLink(
-              //       text: "Não tem uma conta?",
-              //       textLink: "Cadastre-se",
-              //       onPressed: () {},
-              //     ),
-              //   ],
-              // ),
-
-              // Expanded(
-              //   flex: 2,
-              //   child: Column(
-              //     children: <Widget>[
-              //       TextCustomLink(
-              //         text: "Esqueceu sua senha?",
-              //         textLink: "Renove",
-              //         onPressed: () {},
-              //       ),
-              //       SizedBox(
-              //         height: 10,
-              //       ),
-              //       TextCustomLink(
-              //         text: "Não tem uma conta?",
-              //         textLink: "Cadastre-se",
-              //         onPressed: () {},
-              //       ),
-              //     ],
-              //   ),
-              // ),
-              // Text(""),
             ],
           ),
         ),
-
-        // ListView(
-        //   children: <Widget>[
-        //     Container(
-        //       decoration: BoxDecoration(
-        //         color: Colors.white,
-        //         borderRadius: BorderRadius.only(
-        //           bottomRight: Radius.circular(60.0),
-        //         ),
-        //       ),
-        //       padding:
-        //           EdgeInsets.only(top: 50, left: 20, right: 20, bottom: 50),
-        //       width: 200,
-        //       height: 260,
-        //       child: Image.asset(
-        //         'assets/logo.png',
-        //       ),
-        //     ),
-        //     Container(
-        //       height: 60,
-        //       decoration: BoxDecoration(
-        //         color: Colors.white,
-        //       ),
-        //       child: Container(
-        //         decoration: BoxDecoration(
-        //           color: Color(0xffEEECED),
-        //           borderRadius: BorderRadius.only(
-        //             topLeft: Radius.circular(60.0),
-        //           ),
-        //         ),
-        //       ),
-        //     ),
-        //     Container(
-        //       padding: EdgeInsets.only(top: 0, left: 40, right: 40),
-
-        //       child: Column(
-        //         children: <Widget>[
-        //           TextFormFieldCustom(
-        //             text: "Email",
-        //             keyboardType: TextInputType.emailAddress,
-        //           ),
-        //           SizedBox(
-        //             height: 30,
-        //           ),
-        //           TextFormFieldCustom(
-        //             text: "Senha",
-        //             obscureText: true,
-        //             keyboardType: TextInputType.text,
-        //           ),
-        //           SizedBox(
-        //             height: 30,
-        //           ),
-        //           FlatButtonCustom(
-        //             text: "Entrar",
-        //             onPressed: () {
-        //               print('oi?');
-        //             },
-        //           ),
-        //           SizedBox(
-        //             height: 60,
-        //           ),
-        //           TextCustomLink(
-        //             text: "Esqueceu sua senha?",
-        //             textLink: "Renove",
-        //             onPressed: () {},
-        //           ),
-        //           SizedBox(
-        //             height: 10,
-        //           ),
-        //           TextCustomLink(
-        //             text: "Não tem uma conta?",
-        //             textLink: "Cadastre-se",
-        //             onPressed: () {},
-        //           )
-        //         ],
-        //       ),
-        //     ),
-        //   ],
-        // ),
       ),
     );
   }

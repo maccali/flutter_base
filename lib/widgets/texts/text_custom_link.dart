@@ -23,6 +23,7 @@ class TextCustomLink extends StatelessWidget {
           style: TextStyle(
             fontSize: 15,
             color: Color(0xff303030),
+            
           ),
         ),
         SizedBox(
@@ -33,7 +34,7 @@ class TextCustomLink extends StatelessWidget {
           height: 30,
           child: FlatButton(
             shape: RoundedRectangleBorder(
-              borderRadius: new BorderRadius.circular(50.0),
+              borderRadius: BorderRadius.circular(50.0),
             ),
             color: Color(0x33F29BAB),
             child: Text(

@@ -14,32 +14,32 @@ class MyApp extends StatelessWidget {
         primaryColor: Color(0xff262626),
         primarySwatch: Colors.red,
         inputDecorationTheme: InputDecorationTheme(
-          focusedBorder: OutlineInputBorder(
-            borderSide: BorderSide(
-              width: 1,
-            ),
-            borderRadius: BorderRadius.only(
-              topLeft: Radius.circular(40.0),
-              topRight: Radius.circular(40.0),
-              bottomLeft: Radius.circular(40.0),
-              bottomRight: Radius.circular(40.0),
-            ),
-          ),
-          border: OutlineInputBorder(
-            borderSide: BorderSide(
-              color: Color(0xFF7C7B7C),
-            ),
-            borderRadius: BorderRadius.only(
-              topLeft: Radius.circular(40.0),
-              topRight: Radius.circular(40.0),
-              bottomLeft: Radius.circular(40.0),
-              bottomRight: Radius.circular(40.0),
-            ),
-          ),
-          labelStyle: TextStyle(
-            color: Color(0xFF7C7B7C),
-            fontSize: 18.0,
-          ),
+          // focusedBorder: OutlineInputBorder(
+          //   borderSide: BorderSide(
+          //     width: 1,
+          //   ),
+          //   borderRadius: BorderRadius.only(
+          //     topLeft: Radius.circular(40.0),
+          //     topRight: Radius.circular(40.0),
+          //     bottomLeft: Radius.circular(40.0),
+          //     bottomRight: Radius.circular(40.0),
+          //   ),
+          // ),
+          // border: OutlineInputBorder(
+          //   borderSide: BorderSide(
+          //     color: Color(0xFF7C7B7C),
+          //   ),
+          //   borderRadius: BorderRadius.only(
+          //     topLeft: Radius.circular(40.0),
+          //     topRight: Radius.circular(40.0),
+          //     bottomLeft: Radius.circular(40.0),
+          //     bottomRight: Radius.circular(40.0),
+          //   ),
+          // ),
+          // labelStyle: TextStyle(
+          //   color: Color(0xFF7C7B7C),
+          //   fontSize: 18.0,
+          // ),
         ),
       ),
       home: Login(),
