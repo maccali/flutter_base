@@ -10,12 +10,15 @@ class TextFormFieldCustom extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    (obscureText == null) ? obscureText = false : null;
+    if (obscureText == null) {
+      obscureText = false;
+    }
 
     return TextFormField(
       keyboardType: keyboardType,
       obscureText: obscureText,
       decoration: InputDecoration(
+        contentPadding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 20.0),
         labelText: text,
       ),
     );

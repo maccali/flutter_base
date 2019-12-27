@@ -22,7 +22,6 @@ class FlatButtonCustom extends StatelessWidget {
       child: Text(
         text,
         style: TextStyle(fontSize: 20.0),
-        
       ),
     );
   }
